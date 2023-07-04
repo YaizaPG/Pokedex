@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.pokedex {
+    width: 750px;
+    margin: 50px auto 0 auto;
+}
+
+.left {
+    width: 400px;
+    height: 500px;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+.top {
+    width: 400px;
+    height: 80px;
+    background-color: #8b0000;
+    border-top-left-radius: 30px;
+}
+
+.part1 {
+    width: 400px;
+    height: 420px;
+    background-color: #c00d0d;
+    box-shadow: -10px 9px 1px #5e0000;
+    border-bottom-left-radius: 30px;
+}
+
+.detall {
+    width: 201px;
+    height: 85px;
+    background-color: #8b0000;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 0 0 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: -10px 9px 1px #5e0000;
+    border-bottom-right-radius: 85px 60px;
+    border-top-left-radius: 30px;
+}
+
+.siri {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px 1px inset #176180;
+    background: radial-gradient(#05fbfb, #29abe3);
+    border-radius: 35px;
+}
+
+.boto1, .boto2, .boto3 {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    box-shadow: 0 0 2px 1px inset #490000;
+    border-radius: 20px;
+}
+
+.boto1 {
+    background: radial-gradient(#fb7b7b, #fb0505);
+}
+
+.boto2 {
+    background: radial-gradient(#fbfb9b, #fbfb05);
+}
+
+.boto3 {
+    background: radial-gradient(#b0fb7b, #50fb05);
+}
+
+.part2 {
+    width: 216px;
+    height: 451px;
+    background-color: #c00d0d;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius:85px 60px;
+}
+
+.unio {
+    width: 50px;
+    height: 451px;
+    float: right;
+    background: -webkit-linear-gradient(left, #8b0000 0%, #c00d0d 50%, #8b0000 100%);
+    box-shadow: 0 1px 1px #5e0000;
+}
+
+.pantalla {
+    width: 260px;
+    height: 245px;
+    padding: 0 20px;
+    background-color: #b0b0b0;
+    float:left;
+    position: absolute;
+    top: 130px;
+    left: 19px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px 1px #8b0000;
+    border-bottom-left-radius: 50px;
+}
+
+.pantalla:after {
+    border-radius: 15px;
+    background-color: #c00d0d;
+    width: 100px;
+    height: 100px;
+    content: "";
+    clip-path: polygon(-15% 50%, -10% 100%, 38% 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.llums {
+    margin: 6px auto;
+    width: 40px;
+}
+
+.llum1, .llum2 {
+    height: 8px;
+    width: 8px;
+    box-shadow: -1px 1px 1px #5e0000;
+    float: left;
+    background: -webkit-linear-gradient(top, #c00d0d 0%, #8b0000 80%);
+    border-radius: 15px;
+}
+
+.llum1 {
+    margin-right: 20px;
+}
+
+.imatge {
+    width: 254px;
+    height: 175px;
+    margin-top: 20px;
+    margin-bottom: 9px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px inset #010101;
+    clear: both;
+    border-radius: 15px;
+}
+
+#pokeimg {
+    height: 170px;
+    display: block;
+    margin: 0 auto;
+}
+
+.llum3 {
+    height: 26px;
+    width: 26px;
+    background-color: #c00d0d;
+    margin-left: 35px;
+    float: left;
+    border-radius: 30px;
+    box-shadow: -2px 1px 1px 1px #5e0000;
+    background: -webkit-linear-gradient(top, #c00d0d 0%, #8b0000 80%);
+}
+
+.altaveu {
+    width: 75px;
+    height: 25px;
+    float: right;
+    margin-right: 20px;
+}
+
+.sort {
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #494949;
+    border-radius: 30px;
+}
+
+.botoGran {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 395px;
+    left: 30px;
+    border-radius: 100px;
+    background: radial-gradient(#5b5b5b, #060606);
+    box-shadow: -3px 2px 1px #010101;
+}
+
+.botoGran:hover {
+    cursor: pointer;
+}
+
+.barra1 {
+    height: 13px;
+    width: 50px;
+    position: absolute;
+    top: 405px;
+    left: 100px;
+    border-radius: 100px;
+    background: -webkit-linear-gradient(top, #fb6505 0%, #bb0505 100%);
+    box-shadow: -1px 2px 1px #7b0000;
+}
+
+.barra2 {
+    height: 13px;
+    width: 50px;
+    position: absolute;
+    top: 405px;
+    left: 165px;
+    border-radius: 100px;
+    background: -webkit-linear-gradient(top, #0563fb 0%, #2f05bb 100%);
+    box-shadow: -1px 2px 1px #1a0f3e;
+}
+
+.pantVerda {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    position: absolute;
+    top: 430px;
+    left: 108px;
+    background-color: #6ba408;
+    box-shadow: 0px 0px 5px 1px inset #010101;
+    padding: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pantVerda p{
+    font-family: 'Hind';
+    font-size: 20px;
+}
+
+.creu {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 394px;
+    left: 230px;
+}
+
+.topCreu {
+    width: 30px;
+    height: 60px;
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    box-shadow: -3px 2px 1px #010101;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.leftCreu {
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    box-shadow: -3px 2px 1px #010101;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.rightCreu {
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    box-shadow: 0px 2px 1px #010101;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.downCreu {
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    box-shadow: -3px 2px 1px #010101;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.migCreu {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: radial-gradient(#5b5b5b, #060606);
+    z-index: 3;
+}
+
+#topC, #leftC, #rightC, #downC {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+#topC {
+    border-top: 2px solid #222;
+    border-left: 10px solid #222;
+    border-right: 10px solid #222;
+    border-bottom: 10px solid #111;
+    top: 5px;
+    left: 4px;
+}
+
+#leftC {
+    border-top: 10px solid #222;
+    border-right: 10px solid #111;
+    border-bottom: 10px solid #222;
+    border-left: 2px solid #222;
+    top: 5px;
+    left: 4px;
+}
+
+#topC:hover, #leftC:hover, #rightC:hover, #downC:hover {
+    cursor: pointer;
+}
+
+#rightC {
+    border-top: 10px solid #222;
+    border-left: 10px solid #111;
+    border-bottom: 10px solid #222;
+    border-right: 2px solid #222;
+    top: 5px;
+    right: 5px;
+}
+
+#downC {
+    border-left: 10px solid #222;
+    border-right: 10px solid #222;
+    border-top: 10px solid #111;
+    border-bottom: 2px solid #222;
+    bottom: 5px;
+    left: 4px;
+}
+
+.right {
+    width: 350px;
+    height: 500px;
+    float: left;
+    position: relative;
+}
+
+.detallD {
+    width: 350px;
+    height: 80px;
+    background-color: #fff;
+    border-top-right-radius: 30px;
+}
+
+.fonsD {
+    width: 350px;
+    height: 420px;
+    background-color: #c00d0d;
+    border-bottom-right-radius: 30px;
+    box-shadow: -10px 9px #5e0000;
+}
+
+.part1D {
+    width: 166px;
+    height: 451px;
+    background-color: #c00d0d;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top-right-radius:85px 60px;
+}
+
+.curva {
+    width: 216px;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 85px 60px;
+}
+
+#info {
+    height: 130px;
+    width: 280px;
+    padding: 10px;
+    z-index: 1;
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    position: absolute;
+    top: 130px;
+    left: 25px;
+    border-radius: 5px;
+    background-color: rgb(107, 164, 8);
+    box-shadow: 0px 0px 5px 1px inset #010101;
+}
+
+#nom::first-letter, #tipus::first-letter, #atacs::first-letter {
+    text-transform: uppercase;
+}
+
+#info p {
+    margin: 0.5vw;
+    line-height: 1.9vw;
+}
+
+.botonsBlaus {
+    z-index: 1;
+    position: absolute;
+    top: 290px;
+    left: 49px;
+}
+
+.botoBlau {
+    height: 35px;
+    width : 50px;
+    background-color: #003300;
+    float: left;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background: -webkit-linear-gradient(top, #4f85e3 0%, #0472c1 80%);
+    box-shadow: -1px 2px 1px #044075;
+}
+
+.barraNegra1, .barraNegra2 {
+    width: 50px;
+    height: 13px;
+    z-index: 1;
+    position: absolute;
+    top: 370px;
+    left: 200px;
+    border-radius: 100px;
+    background: -webkit-linear-gradient(top, #5b5b5b 0%, #060606 100%);
+    box-shadow: -1px 2px 1px #010101;
+}
+
+.barraNegra2 {
+    left: 258px;
+}
+
+.botoGris1, .botoGris2 {
+    height: 35px;
+    width : 50px;
+    z-index: 1;
+    position: absolute;
+    top: 385px;
+    left: 50px;
+    background: -webkit-linear-gradient(top, #c0c0c0 0%, #6b6b6b 100%);
+    box-shadow: -1px 2px 1px #313131;
+}
+
+.botoGris1:hover, .botoGris2:hover, .botoNegre1:hover, .botoNegre2:hover {
+    cursor: pointer;
+}
+
+.botoGris2 {
+    left: 102px;
+}
+
+.llumGroc {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 392px;
+    left: 258px;
+    border-radius: 20px;
+    background: radial-gradient(#f4f68f, #e1bc06);
+    box-shadow: 0 0 4px 1px #8a7a01;
+}
+
+.botoNegre1, .botoNegre2 {
+    width: 110px;
+    height: 45px;
+    z-index: 1;
+    position: absolute;
+    top: 440px;
+    left: 46px;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(top, #5b5b5b 0%, #060606 100%);
+    box-shadow: 0 0 5px 1px #010101 inset;
+    color: #f4f68f;
+}
+
+.botoNegre2 {
+    left: 200px;
+}

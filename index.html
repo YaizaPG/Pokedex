@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Pokedex Yaiza</title>
+        <script defer src="pokemons.js"></script>
+    </head>
+    <body>
+    <div class="pokedex">
+      <div class="left">
+        <div class="top"></div>
+        <div class="part1"></div>
+        <div class="detall">
+          <div class="siri"></div>
+          <div class="boto1"></div>
+          <div class="boto2"></div>
+          <div class="boto3"></div>
+        </div>
+        <div class="part2">
+          <div class="unio"></div>
+        </div>
+        <div class="pantalla">
+          <div class="llums">
+            <div class="llum1"></div>
+            <div class="llum2"></div>
+          </div>
+          <div class="imatge">
+            <img id="pokeimg" src="pokeball.png" alt="pokemon">
+          </div>
+          <div class="llum3"></div>
+          <div class="altaveu">
+            <div class="sort"></div>
+            <div class="sort"></div>
+            <div class="sort"></div>
+            <div class="sort"></div>
+          </div>
+        </div>
+        <button onclick="index()" class="botoGran"></button>
+        <div class="barra1"></div>
+        <div class="barra2"></div>
+        <div class="pantVerda"><p id="id"></p></div>
+        <div class="creu">
+            <div class="migCreu"></div>
+            <div class="topCreu">
+                <button id="topC" onclick="next()"></button>
+            </div>
+            <div class="leftCreu">
+                <button id="leftC" onclick="previousTen()"></button>
+            </div>
+            <div class="rightCreu">
+                <button id="rightC" onclick="nextTen()"></button>
+            </div>
+            <div class="downCreu">
+                <button id="downC" onclick="previous()"></button>
+            </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="detallD"></div>
+        <div class="fonsD"></div>
+        <div class="part1D"></div>
+        <div class="curva"></div>
+        <div id="info">
+          <p id="nom"></p>
+          <p id="tipus"></p>
+          <p id="altura"></p>
+          <p id="pes"></p>
+          <p id="habilitats"></p>
+        </div>
+        <div class="botonsBlaus">
+          <div class="botoBlau"></div>
+          <div class="botoBlau"></div>
+          <div class="botoBlau"></div>
+          <div class="botoBlau"></div>
+          <div class="botoBlau"></div>
+          <div class="botoBlau"></div>
+          <div class="botoBlau"></div>
+          <div class="botoBlau"></div>
+          <div class="botoBlau"></div>
+          <div class="botoBlau"></div>
+        </div>
+        <button class="botoGris1" onclick="male()">♂</button>
+        <button class="botoGris2" onclick="female()">♀︎</button>
+        <div class="barraNegra1"></div>
+        <div class="barraNegra2"></div>
+        <div class="llumGroc"></div>
+        <button class="botoNegre1" onclick="norm()">normal</button>
+        <button class="botoNegre2" onclick="shiny()">shiny</button>
+      </div>
+    </div>
+  </body>
+</html>
